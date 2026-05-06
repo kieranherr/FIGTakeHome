@@ -1,0 +1,6 @@
+@FIGTakeHomeAPI_HostAddress = http://localhost:5122
+
+GET {{FIGTakeHomeAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="FIGTakeHomeAngular/FIGTakeHomeAngular.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="FIGTakeHomeAPI/FIGTakeHomeAPI.csproj" />
+</Solution>
