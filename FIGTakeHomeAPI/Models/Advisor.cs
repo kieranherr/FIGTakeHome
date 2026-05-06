@@ -1,28 +1,43 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace FIGTakeHomeAPI.Models
 {
-    public class Carrier
+    public class Advisor
     {
         [Key]
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(100)]
-        public string CarrierName { get; set; }
-
         [MaxLength(50)]
-        public string? AMBestRating { get; set; }
+        public string FirstName { get; set; }
 
-        [MaxLength(20)]
-        public string? NAICCode { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string LastName { get; set; }
 
-        [MaxLength(200)]
-        public string? Website { get; set; }
+        [EmailAddress]
+        [MaxLength(150)]
+        public string? Email { get; set; }
 
         [Phone]
         [MaxLength(20)]
         public string? PhoneNumber { get; set; }
+
+        [MaxLength(50)]
+        public string? LicenseNumber { get; set; }
+
+        [MaxLength(100)]
+        public string? LicenseState { get; set; }
+
+        public DateTime? LicenseExpirationDate { get; set; }
+
+        [MaxLength(100)]
+        public string? NPN { get; set; }
+
+        [ForeignKey(nameof(Carrier))]
+        public int CarrierId { get; set; }
+        public Carrier? Carrier { get; set; }
 
         [MaxLength(200)]
         public string? Address { get; set; }
