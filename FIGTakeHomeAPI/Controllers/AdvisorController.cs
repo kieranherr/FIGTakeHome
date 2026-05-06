@@ -32,11 +32,11 @@ namespace FIGTakeHomeAPI.Controllers
             return Ok(distribution);
         }
 
-        [HttpGet("{id}/monthlytrend")]
-        public async Task<ActionResult<Statement>> GetMonthltTrendAsync(int id)
+        [HttpGet("{advisorId}/monthlytrend")]
+        public async Task<ActionResult<Statement>> GetMonthltTrendAsync(int advisorId)
         {
-            var summaries = await _advisorService.GetAdvisorMonthlyTrend(id);
-            return Ok(summaries);
+            var monthlyTrendStatements = await _advisorService.GetAdvisorMonthlyTrend(advisorId);
+            return Ok(monthlyTrendStatements);
         }
     }
 }
