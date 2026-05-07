@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FIGTakeHomeAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260506171604_FixAdvisorForeignKey")]
-    partial class FixAdvisorForeignKey
+    [Migration("20260507180608_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -105,7 +105,7 @@ namespace FIGTakeHomeAPI.Migrations
                         {
                             Id = 1,
                             CarrierId = 1,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Email = "jane.smith@example.com",
                             FirstName = "Jane",
                             IsActive = true,
@@ -120,7 +120,7 @@ namespace FIGTakeHomeAPI.Migrations
                         {
                             Id = 2,
                             CarrierId = 2,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Email = "john.doe@example.com",
                             FirstName = "John",
                             IsActive = true,
@@ -135,7 +135,7 @@ namespace FIGTakeHomeAPI.Migrations
                         {
                             Id = 3,
                             CarrierId = 3,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Email = "maria.garcia@example.com",
                             FirstName = "Maria",
                             IsActive = true,
@@ -212,7 +212,7 @@ namespace FIGTakeHomeAPI.Migrations
                             Id = 1,
                             AMBestRating = "A+",
                             CarrierName = "Nationwide",
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             NAICCode = "23787",
                             PhoneNumber = "800-421-3535",
@@ -223,7 +223,7 @@ namespace FIGTakeHomeAPI.Migrations
                             Id = 2,
                             AMBestRating = "A+",
                             CarrierName = "Prudential Financial",
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             NAICCode = "68241",
                             PhoneNumber = "800-778-2255",
@@ -234,7 +234,7 @@ namespace FIGTakeHomeAPI.Migrations
                             Id = 3,
                             AMBestRating = "A",
                             CarrierName = "Lincoln Financial Group",
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             NAICCode = "65676",
                             PhoneNumber = "877-275-5462",
@@ -245,7 +245,7 @@ namespace FIGTakeHomeAPI.Migrations
                             Id = 4,
                             AMBestRating = "A+",
                             CarrierName = "Pacific Life",
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             IsActive = true,
                             NAICCode = "67466",
                             PhoneNumber = "800-800-7681",
@@ -301,9 +301,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 255.00m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5100m,
-                            StatementDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-01"
                         },
                         new
@@ -312,9 +312,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 260.00m,
-                            CreatedAt = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5200m,
-                            StatementDate = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-02"
                         },
                         new
@@ -323,9 +323,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 265.00m,
-                            CreatedAt = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5300m,
-                            StatementDate = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-03"
                         },
                         new
@@ -334,9 +334,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 270.00m,
-                            CreatedAt = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5400m,
-                            StatementDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-04"
                         },
                         new
@@ -345,9 +345,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 275.00m,
-                            CreatedAt = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5500m,
-                            StatementDate = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-05"
                         },
                         new
@@ -356,9 +356,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 280.00m,
-                            CreatedAt = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5600m,
-                            StatementDate = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-06"
                         },
                         new
@@ -367,9 +367,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 285.00m,
-                            CreatedAt = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5700m,
-                            StatementDate = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-07"
                         },
                         new
@@ -378,9 +378,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 290.00m,
-                            CreatedAt = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5800m,
-                            StatementDate = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-08"
                         },
                         new
@@ -389,9 +389,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 295.00m,
-                            CreatedAt = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 5900m,
-                            StatementDate = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-09"
                         },
                         new
@@ -400,9 +400,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 300.00m,
-                            CreatedAt = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 6000m,
-                            StatementDate = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-10"
                         },
                         new
@@ -411,9 +411,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 305.00m,
-                            CreatedAt = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 6100m,
-                            StatementDate = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-11"
                         },
                         new
@@ -422,9 +422,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 1,
                             CommissionAmount = 310.00m,
-                            CreatedAt = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 6200m,
-                            StatementDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A1-12"
                         },
                         new
@@ -433,9 +433,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 456.00m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 7600m,
-                            StatementDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-01"
                         },
                         new
@@ -444,9 +444,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 462.00m,
-                            CreatedAt = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 7700m,
-                            StatementDate = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-02"
                         },
                         new
@@ -455,9 +455,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 468.00m,
-                            CreatedAt = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 7800m,
-                            StatementDate = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-03"
                         },
                         new
@@ -466,9 +466,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 474.00m,
-                            CreatedAt = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 7900m,
-                            StatementDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-04"
                         },
                         new
@@ -477,9 +477,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 480.00m,
-                            CreatedAt = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8000m,
-                            StatementDate = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-05"
                         },
                         new
@@ -488,9 +488,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 486.00m,
-                            CreatedAt = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8100m,
-                            StatementDate = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-06"
                         },
                         new
@@ -499,9 +499,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 492.00m,
-                            CreatedAt = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8200m,
-                            StatementDate = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-07"
                         },
                         new
@@ -510,9 +510,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 498.00m,
-                            CreatedAt = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8300m,
-                            StatementDate = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-08"
                         },
                         new
@@ -521,9 +521,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 504.00m,
-                            CreatedAt = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8400m,
-                            StatementDate = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-09"
                         },
                         new
@@ -532,9 +532,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 510.00m,
-                            CreatedAt = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8500m,
-                            StatementDate = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-10"
                         },
                         new
@@ -543,9 +543,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 516.00m,
-                            CreatedAt = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8600m,
-                            StatementDate = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-11"
                         },
                         new
@@ -554,9 +554,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 1,
                             CarrierId = 2,
                             CommissionAmount = 522.00m,
-                            CreatedAt = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8700m,
-                            StatementDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-A2-12"
                         },
                         new
@@ -565,9 +565,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 726.00m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12100m,
-                            StatementDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-01"
                         },
                         new
@@ -576,9 +576,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 732.00m,
-                            CreatedAt = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12200m,
-                            StatementDate = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-02"
                         },
                         new
@@ -587,9 +587,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 738.00m,
-                            CreatedAt = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12300m,
-                            StatementDate = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-03"
                         },
                         new
@@ -598,9 +598,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 744.00m,
-                            CreatedAt = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12400m,
-                            StatementDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-04"
                         },
                         new
@@ -609,9 +609,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 750.00m,
-                            CreatedAt = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12500m,
-                            StatementDate = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-05"
                         },
                         new
@@ -620,9 +620,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 756.00m,
-                            CreatedAt = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12600m,
-                            StatementDate = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-06"
                         },
                         new
@@ -631,9 +631,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 762.00m,
-                            CreatedAt = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12700m,
-                            StatementDate = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-07"
                         },
                         new
@@ -642,9 +642,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 768.00m,
-                            CreatedAt = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12800m,
-                            StatementDate = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-08"
                         },
                         new
@@ -653,9 +653,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 774.00m,
-                            CreatedAt = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12900m,
-                            StatementDate = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-09"
                         },
                         new
@@ -664,9 +664,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 780.00m,
-                            CreatedAt = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 13000m,
-                            StatementDate = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-10"
                         },
                         new
@@ -675,9 +675,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 786.00m,
-                            CreatedAt = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 13100m,
-                            StatementDate = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-11"
                         },
                         new
@@ -686,9 +686,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 2,
                             CommissionAmount = 792.00m,
-                            CreatedAt = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2025, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 13200m,
-                            StatementDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2025, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B1-12"
                         },
                         new
@@ -697,9 +697,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 405.00m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8100m,
-                            StatementDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-01"
                         },
                         new
@@ -708,9 +708,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 410.00m,
-                            CreatedAt = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8200m,
-                            StatementDate = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-02"
                         },
                         new
@@ -719,9 +719,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 415.00m,
-                            CreatedAt = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8300m,
-                            StatementDate = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-03"
                         },
                         new
@@ -730,9 +730,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 420.00m,
-                            CreatedAt = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8400m,
-                            StatementDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-04"
                         },
                         new
@@ -741,9 +741,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 425.00m,
-                            CreatedAt = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8500m,
-                            StatementDate = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-05"
                         },
                         new
@@ -752,9 +752,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 430.00m,
-                            CreatedAt = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8600m,
-                            StatementDate = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-06"
                         },
                         new
@@ -763,9 +763,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 435.00m,
-                            CreatedAt = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8700m,
-                            StatementDate = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-07"
                         },
                         new
@@ -774,9 +774,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 440.00m,
-                            CreatedAt = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8800m,
-                            StatementDate = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-08"
                         },
                         new
@@ -785,9 +785,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 445.00m,
-                            CreatedAt = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 8900m,
-                            StatementDate = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-09"
                         },
                         new
@@ -796,9 +796,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 450.00m,
-                            CreatedAt = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9000m,
-                            StatementDate = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-10"
                         },
                         new
@@ -807,9 +807,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 455.00m,
-                            CreatedAt = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9100m,
-                            StatementDate = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-11"
                         },
                         new
@@ -818,9 +818,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 2,
                             CarrierId = 3,
                             CommissionAmount = 460.00m,
-                            CreatedAt = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9200m,
-                            StatementDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-B2-12"
                         },
                         new
@@ -829,9 +829,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 528.00m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9600m,
-                            StatementDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-01"
                         },
                         new
@@ -840,9 +840,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 533.50m,
-                            CreatedAt = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9700m,
-                            StatementDate = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-02"
                         },
                         new
@@ -851,9 +851,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 539.00m,
-                            CreatedAt = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9800m,
-                            StatementDate = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-03"
                         },
                         new
@@ -862,9 +862,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 544.50m,
-                            CreatedAt = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 9900m,
-                            StatementDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-04"
                         },
                         new
@@ -873,9 +873,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 550.00m,
-                            CreatedAt = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10000m,
-                            StatementDate = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-05"
                         },
                         new
@@ -884,9 +884,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 555.50m,
-                            CreatedAt = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10100m,
-                            StatementDate = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-06"
                         },
                         new
@@ -895,9 +895,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 561.00m,
-                            CreatedAt = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10200m,
-                            StatementDate = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-07"
                         },
                         new
@@ -906,9 +906,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 566.50m,
-                            CreatedAt = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10300m,
-                            StatementDate = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-08"
                         },
                         new
@@ -917,9 +917,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 572.00m,
-                            CreatedAt = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10400m,
-                            StatementDate = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-09"
                         },
                         new
@@ -928,9 +928,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 577.50m,
-                            CreatedAt = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10500m,
-                            StatementDate = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-10"
                         },
                         new
@@ -939,9 +939,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 583.00m,
-                            CreatedAt = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10600m,
-                            StatementDate = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-11"
                         },
                         new
@@ -950,9 +950,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 3,
                             CommissionAmount = 588.50m,
-                            CreatedAt = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 10700m,
-                            StatementDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C1-12"
                         },
                         new
@@ -961,9 +961,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 666.00m,
-                            CreatedAt = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11100m,
-                            StatementDate = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-01"
                         },
                         new
@@ -972,9 +972,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 672.00m,
-                            CreatedAt = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11200m,
-                            StatementDate = new DateTime(2024, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 2, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-02"
                         },
                         new
@@ -983,9 +983,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 678.00m,
-                            CreatedAt = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11300m,
-                            StatementDate = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-03"
                         },
                         new
@@ -994,9 +994,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 684.00m,
-                            CreatedAt = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11400m,
-                            StatementDate = new DateTime(2024, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 4, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-04"
                         },
                         new
@@ -1005,9 +1005,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 690.00m,
-                            CreatedAt = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11500m,
-                            StatementDate = new DateTime(2024, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 5, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-05"
                         },
                         new
@@ -1016,9 +1016,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 696.00m,
-                            CreatedAt = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11600m,
-                            StatementDate = new DateTime(2024, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-06"
                         },
                         new
@@ -1027,9 +1027,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 702.00m,
-                            CreatedAt = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11700m,
-                            StatementDate = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 7, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-07"
                         },
                         new
@@ -1038,9 +1038,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 708.00m,
-                            CreatedAt = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11800m,
-                            StatementDate = new DateTime(2024, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 8, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-08"
                         },
                         new
@@ -1049,9 +1049,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 714.00m,
-                            CreatedAt = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 11900m,
-                            StatementDate = new DateTime(2024, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 9, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-09"
                         },
                         new
@@ -1060,9 +1060,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 720.00m,
-                            CreatedAt = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12000m,
-                            StatementDate = new DateTime(2024, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 10, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-10"
                         },
                         new
@@ -1071,9 +1071,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 726.00m,
-                            CreatedAt = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12100m,
-                            StatementDate = new DateTime(2024, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 11, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-11"
                         },
                         new
@@ -1082,9 +1082,9 @@ namespace FIGTakeHomeAPI.Migrations
                             AdvisorId = 3,
                             CarrierId = 4,
                             CommissionAmount = 732.00m,
-                            CreatedAt = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            CreatedAt = new DateTime(2026, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             Premium = 12200m,
-                            StatementDate = new DateTime(2024, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
+                            StatementDate = new DateTime(2026, 12, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                             WritingNumber = "WN-C2-12"
                         });
                 });
@@ -1094,7 +1094,7 @@ namespace FIGTakeHomeAPI.Migrations
                     b.HasOne("FIGTakeHomeAPI.Models.Carrier", "Carrier")
                         .WithMany()
                         .HasForeignKey("CarrierId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Carrier");
@@ -1105,13 +1105,13 @@ namespace FIGTakeHomeAPI.Migrations
                     b.HasOne("FIGTakeHomeAPI.Models.Advisor", "Advisor")
                         .WithMany()
                         .HasForeignKey("AdvisorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("FIGTakeHomeAPI.Models.Carrier", "Carrier")
                         .WithMany()
                         .HasForeignKey("CarrierId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Advisor");
