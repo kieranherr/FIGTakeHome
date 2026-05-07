@@ -1,0 +1,5 @@
+ **Decision Log** — A short write-up covering: what tradeoffs you made, what you'd improve with more time, any edge cases you knowingly punted on, and anything notable about how you used AI during the build.
+ 
+ For this project I used AI(Claude Sonnet 4.6 via Github Copilot integration in VS and VS Code) to mostly do the html in the angular mainly because I'm not super familiar with designing UIs from scratch. I also used AI to speed up the creation of the service calls especially with using DTOs as a "ViewModel". 
+ One of the big trade offs i made was not adding a search box on the page with the ability to see only the one adivsors data that you searched for instead of all three. I setup my end points and service calls in a way where we can add a search box at a later date and only need to update the angular ts and html. 
+ I also would have liked to add a couple additional pages so you could click on a certain advisor in the summary section and open up a page to see all of their data for that specific advisor. 
